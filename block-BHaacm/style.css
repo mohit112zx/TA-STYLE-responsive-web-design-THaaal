@@ -1,0 +1,202 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+header{
+    background-color: #222946;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 11vh;
+}
+.container{
+    width: 100%;
+    margin: 0px auto;
+    padding: 5px 32px;
+}
+.flex{
+
+}
+.navbar{
+
+}
+.navbar a{
+	text-decoration: none;
+	color:#fff;
+	margin-left: 2vh;
+}
+.navbar a:hover{
+    color: #37b667;
+}
+.col{
+    flex: 0 1 50%;
+    height: 55vh;
+    padding: 32px;
+}
+.hero{display: flex;justify-content: space-around;background: #e9ecfc;padding: 5vh;color: #86878a;line-height: 3vh;}
+.art{
+	width: 48%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+	line-height: 6vh;
+}
+h1{
+
+font-size: 240%;
+
+color: black;
+}
+button{
+
+border: none;
+
+background: green;
+
+color: #fff;
+
+padding: 2vh 4vh;
+
+text-transform: capitalize;
+
+border-radius: 0.5vh;
+}
+.blog{
+
+padding: 5vh;
+}
+.inblog{display: flex;justify-content: space-around;}
+h2{font-size: 240%;text-align: center;margin-bottom: 2%;}
+.b1{width: 30%;color: #86878a;}
+.b1 img{
+	width:100%;
+	height: 50%;
+}
+.b1 button{
+	margin: 5% 0;
+	font-size: 2vh;
+	padding: 1.5vh 2vh;
+}
+h3{font-size: 200%;margin: 2% 0;color: black;}
+footer{
+    display: flex;
+    background: #222946;
+    color: #fff;
+    justify-content: space-between;
+    font-size: 3vh;
+    height: 7vh;
+    align-items: center;
+}
+footer a{
+	color: #ffffff;
+	margin-left: 3vh;
+}
+
+@media only screen and (max-width: 768px) {
+    header{
+		flex-direction: column;
+		justify-content: center;
+	}
+	footer{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 14vh;
+		font-size: 4vh;
+		line-height: 1vh;
+		justify-content: space-evenly;
+	}
+	.navbar{
+		padding-top: 2vh;
+		font-size: 2vh;
+	}
+	.hero{
+	display: flex;
+	flex-direction: column-reverse;
+	width: 100%;
+	padding: 4vh 4vh 4vh 3vh;
+	height: 100vh;
+	}
+	.col{
+		width: 92%;
+		padding: 3vh;
+	}
+	.art{
+		width: 92%;
+		display: flex;
+		position: relative;
+		line-height: 4vh;
+	}
+	.inblog{
+		display: flex;
+		flex-direction: column;
+		padding: 1vh 0vh;
+	}
+	.b1{
+		width: 92%;
+	}
+	button{
+		font-size: 2vh;
+		padding: 2vh 6vh;
+	}
+	h1{
+		font-size: 3vh;
+	}
+	h2{
+		font-size: 5vh;
+		padding-bottom: 2vh;
+	}
+	h3{
+	font-size: 3vh;	
+	}
+	.blog button{
+		font-size: 1.5vh;
+		padding: 1.5vh 3vh;
+	}
+  }
